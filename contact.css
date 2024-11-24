@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.gradient-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    /* margin: 20px; */
+}
+
+.card {
+    flex: 1 1 calc(50% - 40px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    border-radius: 45px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.container-card {
+    padding: 20px;
+    text-align: center;
+}
+
+.bg-green-box {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.bg-white-box {
+    background-color: #4CAF50;
+    color: white;
+}
+.bg-yellow-box {
+    background-color: #4CAF50;
+    color: white;
+}
+.bg-blue-box {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* .icon {
+    font-size: 50px;
+    margin-bottom: 10px;
+} */
+
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card-description {
+    font-size: 14px;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    .card {
+        flex: 1 1 100%;
+    }
+}
+
+
+
+.card {
+    max-width: 550px;
+    border: 0;
+    width: 100%;
+    margin-inline: auto;
+    .icon{
+        font-size: 30px;
+        color: #0ff897;
+    }
+  }
+  
+  .container-card {
+    position: relative;
+    border: 2px solid transparent;
+    /* background: linear-gradient(71deg, #2097bf, #2097bf, #2097bf); */
+    background-color: #17b4e4b0;
+    background-clip: padding-box;
+    border-radius: 45px;
+    padding: 40px;
+    img {
+      margin-bottom: 32px;
+    }
+  }
+  
+  .bg-green-box,
+  .bg-white-box,
+  .bg-yellow-box,
+  .bg-blue-box {
+    position: relative;
+  }
+  
+  .bg-green-box::after,
+  .bg-white-box::after,
+  .bg-yellow-box::after,
+  .bg-blue-box::after {
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
+    content: "";
+    z-index: -1;
+    border-radius: 45px;
+  }
+  
+  .bg-green-box::after {
+    background: linear-gradient(71deg, #e26411, #05ee25, #0d1212);
+  }
+  
+  .bg-white-box::after {
+    background: linear-gradient(71deg, #121013, #c90bc9, #121013);
+  }
+  
+  .bg-yellow-box::after {
+    background: linear-gradient(71deg, #110e0e, #afa220, #110e0e);
+  }
+  
+  .bg-blue-box::after {
+    background: linear-gradient(71deg, #0c0a0e, #5f6fad, #0c0a0e);
+  }
+  
+  .card-title {
+    font-weight: 600;
+    color: white;
+    letter-spacing: -0.02em;
+    line-height: 40px;
+    font-style: normal;
+    font-size: 28px;
+    padding-bottom: 8px;
+  }
+  
+  .card-description {
+    font-weight: 600;
+    line-height: 32px;
+    color: hsla(0, 0%, 100%, 0.5);
+    font-size: 16px;
+    max-width: 470px;
+  }

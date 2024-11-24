@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="service.css">
+    <script src="https://use.fontawesome.com/3903c9d7fd.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Anand Kumar</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="logo.png" alt="Logo" />
+      </div>
+      <div class="inner-header">
+        <h1 style="color: rgb(0, 78, 117);">Service Offered</h1>
+      </div>
+
+      <div>
+        <svg
+          class="waves"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28"
+          preserveAspectRatio="none"
+          shape-rendering="auto"
+        >
+          <defs>
+            <path
+              id="gentle-wave"
+              d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18v44h-352z"
+            />
+          </defs>
+          <g class="parallax">
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="2"
+              fill="rgba(54,233,153,0.7)"
+            />
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="6"
+              fill="rgba(96,246,255,0.5)"
+            />
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="9"
+              fill="rgba(134,196,219,0.4)"
+            />
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="14"
+              fill="rgba(0,186,239,0.3)"
+            />
+            <!-- <use xlink:href="#gentle-wave" x="48" y="18" fill="rgba(75,171,200,0.2)" />
+                <use xlink:href="#gentle-wave" x="48" y="22" fill="rgba(80,202,221,0.1)" /> -->
+          </g>
+        </svg>
+      </div>
+    </header>
+    <div id="click_btn">
+      <br /><i onclick="toggleNavbar()" class="icon"
+        ><i class="fa fa-bars fa-lg" aria-hidden="true"></i></i
+      ><br />
+    </div>
+    <div id="navbar" class="navbar">
+      <a href="javascript:void(0)" class="close-btn" onclick="toggleNavbar()">×</a>
+      <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+      <a href="about.html"><i class="fa-solid fa-address-card"></i> About&nbsp; Us</a>
+      <a href="photos.html"><i class="fa-solid fa-photo-film"></i> Photos</a>
+      <a href="team.html"><i class="fa-solid fa-users"></i> Our&nbsp;Team</a>
+      <a class="active" href=""><i class="fa-solid fa-user-nurse"></i> Service</a>
+      <!-- <a href="contact.html"><i class="fa-solid fa-phone-volume"></i> Contact</a> -->
+      <a href="location.html"><i class="fa-solid fa-location-dot"></i> Location</a>
+      <!-- <a href="payment.html"><i class="fa-brands fa-cc-amazon-pay"></i> Payment</a>
+      <a href="feedback.html"><i class="fa-solid fa-pen-nib"></i> Feedback</a> -->
+    </div>
+
+    <div class="gradient-cards">
+       <div class="card">
+          <div class="container-card bg-green-box">
+              <!-- <span class="icon"><i class="fa fa-ambulance" aria-hidden="true"></i></span> -->
+              <img style="border-radius: 20px; padding: 0px;" src="General_medicine.jpg" width="200px" height="100px" alt="">
+              <h2 class="card-title">General Medicine</h2>
+              <p class="card-description">We provide a general treatment for illness on health issues, basic first aid for minor injuries and wounds.</p>
+              <p class="card-description">Our clinics aim to provide comprehensive care</p>
+          </div>
+      </div>
+      <!-- <div class="card">
+        <div class="container-card bg-green-box">
+            <!-- <span class="icon"><i class="fa fa-ambulance" aria-hidden="true"></i></span> --
+            <img style="border-radius: 20px; padding: 0px;" src="General_medicine.jpg" width="200px" height="100px" alt="">
+            <h2 class="card-title">Clinic Price List</h2>
+            <p class="card-description">###   ***<br>abc   xyz</p>
+            <p class="card-description">Our clinics aim to provide comprehensive care</p>
+        </div>
+    </div> -->
+      <div class="card">
+        <div class="container-card bg-green-box">
+            <!-- <span class="icon"><i class="fa fa-ambulance" aria-hidden="true"></i></span> -->
+            <img style="border-radius: 20px; padding: 0px;" src="price_list.png" width="200px" height="100px" alt="">
+            <h2 class="card-title">Our Clinic's Price List</h2>
+            <div class="Price"><p class="card-description"><table border="1"><thead><th>Consultation: ₹100</th><th>Observation Charge: ₹700</th><th>Dressing: ₹100-500</th></thead><tbody><tr><td>Consultation+1 inj: ₹150</td><td>Suturing Charge: ₹200</td><td>Outside injection: ₹50</td></tr><tr><td>Consultation+2 inj: ₹200</td><td>Nebulization: ₹100</td><td>BP check-up: ₹30</td></tr><tr><td>Special-Consultation: ₹200</td><td>Grbs: ₹100</td><td>Revisit: ₹100</td></tr></tbody></table></p></div>
+        </div>
+    </div>
+      <div class="card">
+          <div class="container-card bg-green-box">
+              <!-- <span class="icon"><i class="fa fa-medkit" aria-hidden="true"></i></span> -->
+              <img style="border-radius: 20px; padding: 0px;" src="ecg.jpg" width="200px" height="100px" alt="">
+              <p class="card-title">ECG Test</p>
+              <p class="card-description">We provide an ECG testing facilicies</p>
+              <!-- <p class="card-description">**********</p> -->
+              <br><br><br>
+          </div>
+      </div>
+      <div class="card">
+        <div class="container-card bg-green-box">
+          <!-- <span class="icon"><i class="fa fa-stethoscope" aria-hidden="true"></i></span> -->
+          <img style="border-radius: 20px; padding: 0px;" src="x-ray.jpg" width="200px" height="125px" alt="">
+          <p class="card-title">X-Ray Scan</p>
+          <p class="card-description">We provide an best X-Ray Body Scaning facilicies</p>
+          <!-- <p class="card-description">**********</p> -->
+        </div>
+      </div>
+  
+      <div class="card">
+        <div class="container-card bg-green-box">
+          <!-- <span class="icon"><i class="fa fa-bed" aria-hidden="true"></i></span> -->
+          <img style="border-radius: 20px; padding: 0px;" src="lab.jpg" width="200px" height="115px" alt="">
+          <p class="card-title">Laboratory</p>
+          <p class="card-description">We have well Equiped laboratories, all type of blood test are done here,free home visit sample collection facility</p>
+          <!-- <p class="card-description">**********</p> -->
+          <br><br>
+        </div>
+      </div>
+      <div class="card">
+        <div class="container-card bg-green-box">
+            <!-- <span class="icon"><i class="fa-solid fa-vial-circle-check"></i></span> -->
+            <img style="border-radius: 20px; padding: 0px;" src="bed.jpg" width="200px" height="120" alt="">
+            <p class="card-title">Admiting Patients</p>
+            <p class="card-description">We admit patients and provide godd medical assessment</p>
+            <!-- <p class="card-description">**********</p> -->
+        </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="container-card bg-green-box">
+        <!-- <span class="icon"><i class="fa-solid fa-vial-circle-check"></i></span> -->
+        <img style="border-radius: 20px; padding: 0px;" src="Ambulance.png" width="200px" alt="">
+        <p class="card-title">Ambulace</p>
+        <p class="card-description">We facilating 24/7 ambulance service on emergency cases</p>
+        <p class="card-description">Contact for Ambulance:**********</p>
+    </div>
+</div>
+</div>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>

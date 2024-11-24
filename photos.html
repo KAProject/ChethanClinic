@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="photos.css">
+    <script src="https://use.fontawesome.com/3903c9d7fd.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Anand Kumar</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="logo.png" alt="Logo" />
+      </div>
+      <div class="inner-header">
+        <h1 style="color: rgb(0, 78, 117);">Photos</h1>
+      </div>
+
+      <div>
+        <svg
+          class="waves"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28"
+          preserveAspectRatio="none"
+          shape-rendering="auto"
+        >
+          <defs>
+            <path
+              id="gentle-wave"
+              d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18v44h-352z"
+            />
+          </defs>
+          <g class="parallax">
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="2"
+              fill="rgba(54,233,153,0.7)"
+            />
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="6"
+              fill="rgba(96,246,255,0.5)"
+            />
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="9"
+              fill="rgba(134,196,219,0.4)"
+            />
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="14"
+              fill="rgba(0,186,239,0.3)"
+            />
+            <!-- <use xlink:href="#gentle-wave" x="48" y="18" fill="rgba(75,171,200,0.2)" />
+                <use xlink:href="#gentle-wave" x="48" y="22" fill="rgba(80,202,221,0.1)" /> -->
+          </g>
+        </svg>
+      </div>
+    </header>
+    <div id="click_btn">
+      <br /><i onclick="toggleNavbar()" class="icon"
+        ><i class="fa fa-bars fa-lg" aria-hidden="true"></i></i
+      ><br />
+    </div>
+    <div id="navbar" class="navbar">
+      <a href="javascript:void(0)" class="close-btn" onclick="toggleNavbar()">×</a>
+      <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+      <a href="about.html"><i class="fa-solid fa-address-card"></i> About&nbsp; Us</a>
+      <a class="active" href=""><i class="fa-solid fa-photo-film"></i> Photos</a>
+      <a href="team.html"><i class="fa-solid fa-users"></i> Our&nbsp;Team</a>
+      <a href="service.html"><i class="fa-solid fa-user-nurse"></i> Service</a>
+      <!-- <a href="contact.html"><i class="fa-solid fa-phone-volume"></i> Contact</a> -->
+      <a href="location.html"><i class="fa-solid fa-location-dot"></i> Location</a>
+      <!-- <a href="payment.html"><i class="fa-brands fa-cc-amazon-pay"></i> Payment</a>
+      <a href="feedback.html"><i class="fa-solid fa-pen-nib"></i> Feedback</a> -->
+    </div>
+<!-- <h2 style="text-align: center;color: whitesmoke;">Photos</h2> -->
+    <div class="image"><img src="Aimg1.jpg" alt="no image" class="responsive-img"></div>
+    <div class="image"><img src="Aimg2.jpg" alt="no image" class="responsive-img"></div>
+    <video style="justify-content: center; padding: 10px 10px 10px 10px;" src="compressed_vidio.mp4" width="370px" height="300px" controls muted></video>
+    <div class="image"><img src="Aimg3.jpg" alt="no image" class="responsive-img"></div>
+    <div class="image"><img src="Aimg4.jpg" alt="no image" class="responsive-img"></div>
+    <div class="image"><img src="Aimg5.jpg" alt="no image" class="responsive-img"></div>
+    <div class="image"><img src="Aimg6.jpg" alt="no image" class="responsive-img"></div>
+    <div class="image"><img src="Aimg7.jpg" alt="no image" class="responsive-img"></div>
+    <div class="image"><img src="Aimg8.jpg" alt="no image" class="responsive-img"></div>
+    <!-- <div class="image" style="justify-content: center; padding: 10px 10px 10px 10px; border-radius: 20px;"><img src="Aimg9.jpg" alt="no image" width="370px"></div> -->
+    <div class="image"><img src="Aimg9.jpg" alt="no image" class="responsive-img"></div>
+    <div class="image"><img src="Aimg10.jpg" alt="no image" class="responsive-img"></div>
+     
+     
+
+    <script src="script.js"></script>
+  </body>
+</html>

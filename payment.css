@@ -1,0 +1,16 @@
+.qr-code{
+    text-align: center;
+    img{
+        /* display: block; */
+        width: 300px;
+        height: 350px;
+    }
+    .PayLink{
+        text-decoration: none;
+        background: #0882d4;
+        padding:5px 50px 5px 50px;
+        border-radius: 45%;
+        color: aquamarine;
+        font-size:x-large
+    }
+}
