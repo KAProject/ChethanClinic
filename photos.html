@@ -104,6 +104,144 @@
     <!-- <div class="image" style="justify-content: center; padding: 10px 10px 10px 10px; border-radius: 20px;"><img src="Aimg9.jpg" alt="no image" width="370px"></div> -->
     <div class="image"><img src="Aimg9.jpg" alt="no image" class="responsive-img"></div>
     <div class="image"><img src="Aimg10.jpg" alt="no image" class="responsive-img"></div>
+
+
+
+    <ul class="cards">
+      <li>
+        <a href="" class="card">
+          <img src="new_hsptl.jpg" class="card__image" alt="receptionist image" />
+          <div class="card__overlay">
+            <div class="card__header">
+              <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+              <img class="card__thumb" src="new_hsptl.jpg" alt="receptionist" />
+              <div class="card__header-text">
+                <h3 class="card__title">KRIYASHILA HOSPITALS</h3>            
+                <!-- <span class="card__status">#####</span> -->
+              </div>
+            </div>
+            <p class="card__description">“Our new hospital for poor patients.. All types of facilities available and all health cards are accepted. For enquiries contact 9663601034”</p>
+          </div>
+        </a>      
+      </li>
+    </ul>
+    <style>
+      .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 4rem 5vw;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .card {
+    position: relative;
+    display: block;
+    height: 100%;  
+    border-radius: calc(var(--curve) * 1px);
+    overflow: hidden;
+    text-decoration: none;
+  }
+  
+  .card__image {      
+    width: 100%;
+    height: 400px;
+  }
+  
+  .card__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;      
+    border-radius: calc(var(--curve) * 1px);    
+    background-color:var(--surface-color);  
+    transform: translateY(100%);
+    transition: .2s ease-in-out;
+  }
+  
+  .card:hover .card__overlay {
+    transform: translateY(0);
+  }
+  
+  .card__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
+    border-radius: calc(var(--curve) * 1px) 0 0 0;    
+    background-color: var(--surface-color);
+    transform: translateY(-100%);
+    transition: .2s ease-in-out;
+  }
+  
+  .card__arc {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 100%;
+    right: 0;      
+    z-index: 1;
+  }
+  
+  .card__arc path {
+    fill: var(--surface-color);
+    d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+  }       
+  
+  .card:hover .card__header {
+    transform: translateY(0);
+  }
+  
+  .card__thumb {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;      
+    border-radius: 50%;      
+  }
+  
+  .card__title {
+    font-size: 1em;
+    margin: 0 0 .3em;
+    color: #0e8dee;
+  }
+  
+  .card__tagline {
+    display: block;
+    margin: 1em 0;
+    font-family: "MockFlowFont";  
+    font-size: .8em; 
+    color: #D7BDCA;  
+  }
+  
+  .card__status {
+    font-size: .8em;
+    color: #D7BDCA;
+  }
+  
+  .card__description {
+    padding: 0 2em 2em;
+    margin: 0;
+    color: #0696f0;
+    font-family: "MockFlowFont";   
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 10;
+    overflow: hidden;
+    font-size: 1em;
+  }
+  :root {
+    --surface-color: #fff;
+    --curve: 40;
+  }
+    </style>
+<img style="padding: 20px 5px 20px 5px; border-radius: 35px;" src="newimg1.jpg" alt="No image" width="380px">
+<!-- <img style="padding: 20px 5px 20px 5px; border-radius: 35px;" src="newimg2.jpg" alt="No image" width="380px">
+<img style="padding: 20px 5px 20px 5px; border-radius: 35px;" src="newimg3.jpg" alt="No image" width="380px"> -->
+<div class="image"><img src="newimg3.jpg" alt="no image" class="responsive-img"></div>
+<div class="image"><img src="newimg2.jpg" alt="no image" class="responsive-img"></div>
      
      
 
