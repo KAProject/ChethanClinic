@@ -12,14 +12,23 @@
 
 
 .image {
+    /* height: 10px; */
     display: inline-block;
     margin: 1%;
 }
 
 .responsive-img {
     width: 100%;
-    height: 200px;
+    height: 550px;
     border-radius: 30px;
+}
+
+/* Extra small devices (phones, 0-599px) */
+@media (max-width: 599px) {
+    .responsive-img {
+        width: 100%;
+        height: 200px;
+    }
 }
 
 /* Extra small devices (phones, 0-599px) */
