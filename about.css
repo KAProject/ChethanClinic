@@ -32,7 +32,11 @@ body{
         font-family: 'Courier New', Courier, monospace;
     }
     .education{
-        font-size: 18px;
+        font-size: 16px;
+    }
+    .spacialist{
+        font-size: 17.5px;
+
     }
     }   
 } 
@@ -98,6 +102,39 @@ body{
     padding-left: 10px;
     padding-right: 0px;
     font-family:'Courier New', Courier, monospace;
+
+    .description{
+        text-align: justify;
+        /* padding: 0px 15px 0px 15px; */
+        font-size: 15px;
+        border-width: 5px;
+        --b: .5em; /* border width */
+        --c: 3em; /* corner size */
+        --r: 2em; /* corner rounding */
+        place-self: center;
+        position: relative;        
+        margin: 1em auto;
+        border: solid var(--b) transparent;
+        padding: 1em;
+
+        &::before {
+            position: absolute;
+            z-index: -1;
+            inset: calc(-1*var(--b));
+            border: inherit;
+            border-radius: var(--r);
+            /* background: linear-gradient(90deg, rgba(73,138,104,1) 0%, rgba(9,121,118,1) 35%, rgba(0,206,255,1) 100%); */
+            background: linear-gradient(rgb(0, 255, 200), rgb(20, 157, 255), rgb(0, 79, 128)) border-box;
+            --corner: 
+                conic-gradient(from -90deg at var(--c) var(--c), red 25%, #0000 0) 
+                    0 0/ calc(100% - var(--c))  calc(100% - var(--c)) border-box;
+            --inner: conic-gradient(red 0 0) padding-box;
+            mask: 
+                var(--corner) subtract, 
+                var(--inner);
+            content: ''
+        }
+    }
 }
 
 .certificates_at_1{
